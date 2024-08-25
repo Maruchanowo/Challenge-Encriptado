@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="form-section">
-            <div class="logo">a</div>
+            <div class="logo">Challenge Encriptado</div>
             <textarea placeholder="Ingrese el texto aqui"></textarea>
             <div class="info-text">⚠️ Solo letras minúsculas y sin acentos</div>
             <div class="buttons">
-                <button class="encrypt-btn">Encriptar</button>
-                <button class="decrypt-btn">Desencriptar</button>
+                <button class="encrypt-btn" onclick="encryptText()">Encriptar</button>
+                <button class="decrypt-btn" onclick="decryptText()">Desencriptar</button>
             </div>
         </div>
         <div class="result-section">
-            <img src="path/to/your-image.svg" alt="No message found">
-            <p class="message-title">Ningún mensaje fue encontrado</p>
-            <p class="message-description">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div id="result-display">
+                <img src="imagenes/sintexto.jpg" alt="No message found">
+                <p class="message-title">Ningún mensaje fue encontrado</p>
+                <p class="message-description">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
         </div>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
